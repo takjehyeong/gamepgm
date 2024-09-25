@@ -27,7 +27,7 @@ int main()
 void make_card(trump m_card[])
 {
 	int i, j;
-	char shape [4] [3] = {"¢¼", "¡ß", "¢¾", "¢À"};
+	char shape [4] [3] = {"â™ ", "â—†", "â™¥", "â™£"};
 	for(i = 0; i < 4; i++)
 	{
 		for(j = i * 13; j < i * 13 + 13; j++)
@@ -60,11 +60,11 @@ void make_card(trump m_card[])
 	
 void display_card(trump m_card[])
 {
-	printf("¿£ÅÍ¸¦ ´­·¯ ÇÚµð¸¦ ¹èÁ¤¹ÞÀ¸¼¼¿ä.\n");
+	printf("ì—”í„°ë¥¼ ëˆŒëŸ¬ í•¸ë””ë¥¼ ë°°ì •ë°›ìœ¼ì„¸ìš”.\n");
 	int i, count = 0;
 	char hand, flop, river, turn;
 
-	gets(&hand); //ÇÚµð 
+	gets(&hand); //í•¸ë”” 
 	for(i = 0; i < 2; i++)
 	{
 		printf("%s", m_card[i].shape);
@@ -79,9 +79,9 @@ void display_card(trump m_card[])
 			count = 0;
 		}
 	}
-	printf("\n¿£ÅÍ¸¦ ´­·¯ ÇÃ¶øÀ» ¹èÁ¤¹ÞÀ¸¼¼¿ä.\n", hand);
+	printf("\nì—”í„°ë¥¼ ëˆŒëŸ¬ í”Œëžì„ ë°°ì •ë°›ìœ¼ì„¸ìš”.\n", hand);
 	
-	gets(&flop); //ÇÃ¶ø 
+	gets(&flop); //í”Œëž 
 	for(i = 2; i < 5; i++)
 	{
 		printf("\n%s", m_card[i].shape);
@@ -96,9 +96,9 @@ void display_card(trump m_card[])
 			count = 0;
 		}
 	}
-	printf("\n¿£ÅÍ¸¦ ´­·¯ ¸®¹ö¸¦ ¹èÁ¤¹ÞÀ¸¼¼¿ä.\n", flop);
+	printf("\nì—”í„°ë¥¼ ëˆŒëŸ¬ í„´ì„ ë°°ì •ë°›ìœ¼ì„¸ìš”.\n", flop);
 	
-	gets(&river); //¸®¹ö	
+	gets(&river); //ë¦¬ë²„	
 	for(i = 5; i < 6; i++)
 	{
 
@@ -115,9 +115,9 @@ void display_card(trump m_card[])
 			count = 0;
 		}
 	}
-	printf("\n¿£ÅÍ¸¦ ´­·¯ ÅÏÀ» ¹èÁ¤¹ÞÀ¸¼¼¿ä.\n", river);	
+	printf("\nì—”í„°ë¥¼ ëˆŒëŸ¬ ë¦¬ë²„ë¥¼ ë°°ì •ë°›ìœ¼ì„¸ìš”.\n", river);	
 	
-	gets(&turn);//ÅÏ 
+	gets(&turn);//í„´ 
 	for(i = 6; i < 7; i++)
 	{		
 		printf("\n%s", m_card[i].shape);
