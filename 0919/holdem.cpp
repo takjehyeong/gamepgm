@@ -98,7 +98,7 @@ void display_card(trump m_card[])
 	}
 	printf("\n엔터를 눌러 턴을 배정받으세요.\n", flop);
 	
-	gets(&river); //리버	
+	gets(&turn); //턴	
 	for(i = 5; i < 6; i++)
 	{
 
@@ -115,9 +115,9 @@ void display_card(trump m_card[])
 			count = 0;
 		}
 	}
-	printf("\n엔터를 눌러 리버를 배정받으세요.\n", river);	
+	printf("\n엔터를 눌러 리버를 배정받으세요.\n", turn);	
 	
-	gets(&turn);//턴 
+	gets(&river);//리버
 	for(i = 6; i < 7; i++)
 	{		
 		printf("\n%s", m_card[i].shape);
