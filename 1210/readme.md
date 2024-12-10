@@ -1,2 +1,2 @@
 
-Game Programming Simple Example_02 Upgrade
+Game Programming Sample Example_02 Upgrade
